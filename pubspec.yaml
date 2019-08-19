@@ -1,0 +1,11 @@
+name: ml_tech
+description: Linter rules and common ci tasks for dart ml libraries
+version: 0.0.1
+author: Ilia Gyrdymov <ilgyrd@gmail.com>
+homepage: https://github.com/gyrdym/ml_tech
+
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+
+dev_dependencies:
+  pedantic: 1.1.0
