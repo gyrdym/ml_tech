@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.5
+- All tasks extracted into a separate file
+
 ## 0.0.4
 - Analysis added to grinder tasks
 

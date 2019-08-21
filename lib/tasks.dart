@@ -6,13 +6,11 @@ import 'package:grinder_coveralls/grinder_coveralls.dart' as coveralls;
 
 const outputFileName = 'coverage.info';
 
-/// Starts the build system.
-Future<void> main(List<String> args) => grind(args);
-
-@Task('Analyze code, runs the test suites and collect coverage')
-Future<void> start() async {
+void analyze() {
   Analyzer.analyze('lib', fatalWarnings: true);
+}
 
+Future<void> test() async {
   await coveralls.collectCoverage(
     getDir('test'),
     saveAs: outputFileName,
@@ -21,8 +19,7 @@ Future<void> start() async {
   );
 }
 
-@Task('Upload the coverage')
-Future<void> finish() async {
+Future<void> uploadCoverage() async {
   final coverage = await getFile(outputFileName)
       .readAsString();
   await coveralls.uploadCoverage(coverage);
