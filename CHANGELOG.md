@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.4
+- Analysis added to grinder tasks
+
 ## 0.0.3
 - Common travis options added
 - Common grind tasks added

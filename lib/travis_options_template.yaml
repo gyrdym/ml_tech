@@ -1,0 +1,8 @@
+# Use it as a template for your own travis configuration. Unfortunately, travis does not support `include` directive,
+# thus you should copy and paste it every time you create a repository with travis ci
+language: dart
+dart:
+  - "2.4.1"
+install: pub get
+script: pub run grinder start
+after_success: pub run grinder finish
