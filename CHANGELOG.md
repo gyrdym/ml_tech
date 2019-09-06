@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.6
+- Unit testing: common iterable matchers added
+
 ## 0.0.5
 - All tasks extracted into a separate file
 
