@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.8
+- Unit testing: json reader returning type fixed
+
 ## 0.0.7
 - Unit testing: json reader added
 
