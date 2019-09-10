@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.7
+- Unit testing: json reader added
+
 ## 0.0.6
 - Unit testing: common iterable matchers added
 
